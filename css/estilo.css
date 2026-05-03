@@ -1,0 +1,330 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+hr{
+    border: 0;
+    border-top: 1px solid #30363d;
+    margin: 20px 0;
+}
+
+body {
+    background-color: #0d1117;
+    color: #8b949e;
+    display: flex;
+}
+
+
+/* Espaço para o conteúdo não ficar embaixo da sidebar */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    width: 100%;
+}
+
+/* ==========================================
+   HOME SECTION
+   ========================================== */
+
+.home-container {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 80vh;
+}
+.home-text-container {
+    flex: 1;
+    max-width: 600px;
+}
+.home-foto-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* =====================
+    Comando de start
+   ===================== */
+.intro {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.intro-simbolo {
+    color: #3fb950;
+    font-weight:bold;
+}
+.intro-text {
+    padding-left: 10px;
+}
+
+
+/* =====================
+    Apresentaçao do nome
+   ===================== */
+
+.i-am {
+    padding-top: 20px;
+}
+.name-container {
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.name-dot {
+    color: #3fb950;
+}
+.maiorque-simbol {
+    font-weight: bolder;
+    color:#3fb950
+}
+
+/* =====================
+    Profissão
+   ===================== */
+
+.eusou-container {
+    padding-top: 10px;
+}
+.eusou-funcao {
+    color:aqua;
+    font-weight: bold;
+}
+
+/* =====================
+    Descricao
+   ===================== */
+.home-descricao {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+/* =====================
+    Botões home
+   ===================== */
+
+.home-buttons-container {
+    margin-top: 50px;
+
+}
+
+.github-btn {
+    padding: 15px;
+    margin-right: 50px;
+    border: 2px solid #3fb950;
+    color:#3fb950;    
+    background-color: rgba(63, 185, 80, 0.1);
+    font-family: monospace;
+    text-decoration: none;
+}
+.arrow-btn {
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.contact-btn {
+    padding: 15px;
+    border: 2px solid #30363d;
+    color: #acb4bd;    
+    background-color: #161b22;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+/* =====================
+    Foto home
+   ===================== */
+.home-foto-container {
+    margin-top: 70px;   
+    border: 2px solid #30363d;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    max-width: 450px; /* Evita que a foto fique gigante em telas grandes */
+}
+.foto-titulo-container {
+    padding: 10px;
+    border-bottom: 1px solid #30363d;
+    background-color: #161b22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.home-image img {
+    width: 100%;       /* Ocupa toda a largura da div */
+    height: 350px;     
+    object-fit: cover; /* Corta o excesso e centraliza o rosto */
+    display: block;
+
+    object-position: top; /*Faz o corte priorizar o topo da imagem*/
+}
+
+.circle-color-green,
+.circle-color-red,
+.circle-color-yellow {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+.circle-color-green { background-color: #3fb950; }
+.circle-color-red { background-color: #ff5f56; }
+.circle-color-yellow { background-color: #ffbd2e; }
+
+
+
+/* ==========================================
+   High Section Container HSC
+   ========================================== */
+.high-sections-container {
+    margin-bottom: 50px;
+}
+.hsc-titulo {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.hsc-chaves {
+    color:#3fb950;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.hsc-desc {
+    display: block;
+    padding-left: 30px;
+
+}
+
+
+/* ==========================================
+   Square Code Container SCC
+   ========================================== */
+.square-code-container {
+    border: 2px solid #30363d;
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #161b29;
+}
+.square-code-titulo {
+    padding: 10px;
+    background-color: #161b22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #30363d;
+}
+.square-code-content {
+    padding: 30px;
+}
+.square-code-content [name="space"] {
+    padding-left: 30px;
+}
+
+.scc-numbers {
+    font-size: 12px;
+    color: grey;
+    font-weight:bolder;
+
+}
+.scc-text-cyan {
+    color: aqua;
+}
+.scc-text-green {
+    color:#1be336;
+}
+/* ==========================================
+   about SECTION
+   ========================================== */
+   /* =====================
+   About Bonus Squares ABS
+   ======================= */
+.abs {
+    height: 80px;
+    width: 220px;
+    background-color: #161b29;
+    border: 2px solid #30363d;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.abs-text-green {
+    font-size: 25px;
+    display: block;
+    color: #1be336;
+}
+.abs-text-grey {
+    font-size: 12px
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+.about-bonus {
+    flex: 1;
+    max-width: 50%;
+}
+.about-bonus-squares {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+/* ==========================================
+   Stack SECTION
+   ========================================== */
+/* =====================
+   Stack Square Base SSB
+   ======================= */
+
+.stack-container {
+    margin-left: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+.square-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.stack-square-base {
+    height: 80px;
+    width: 80px;
+    background-color: #161b29;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.square-text-down {
+    font-size: 14px;
+    color: #8b949e;
+}
+
+.stack-square-text {
+    font-size: 20px;
+    color: #8b949e;
+}
