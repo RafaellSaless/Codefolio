@@ -9,7 +9,7 @@
 hr{
     border: 0;
     border-top: 1px solid #30363d;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 body {
@@ -200,6 +200,7 @@ body {
 .hsc-desc {
     display: block;
     padding-left: 30px;
+    margin: 10px 0;
 
 }
 
@@ -261,6 +262,7 @@ body {
 }
 .abs-text-green {
     font-size: 25px;
+    font-weight: bolder;
     display: block;
     color: #1be336;
 }
@@ -328,3 +330,63 @@ body {
     font-size: 20px;
     color: #8b949e;
 }
+/* ==========================================
+   Experience SECTION
+   ========================================== */
+
+.experience-container {
+    border-left: 2px solid #30363d;
+    padding-left: 40px;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -52px; /* Ajuste esse valor até a bolinha cobrir a linha do container */
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #0d1117; /* Mesma cor do fundo para parecer vazada */
+    border: 2px solid #1be336;
+    border-radius: 50%;
+    background-color: #075e12;
+}
+
+.experience-commits-text-green {
+    color: #1be336;
+}
+.desc-commit-greencode {
+    color: #00ff22;
+    background-color: #0c3712;
+}
+.experience-commit-title {
+    margin: 0 10px;
+    font-size: 22px;
+    color: whitesmoke;
+}
+.experience-commit-desc {
+    width: 550px;
+}
+.experience-commit-local-text {
+    color:aqua;
+    font-size: 17px;
+}
+.experience-commmit-squares-container {
+    display: flex;         /* Coloca os itens em linha */
+    flex-wrap: wrap;       /* Se não couberem na linha, eles pulam para a de baixo */
+    gap: 10px;             /* Cria um espaçamento uniforme entre eles */
+    margin-top: 15px;      /* Dá um respiro em relação ao texto de cima[cite: 6] */
+}
+.experience-commit-squares {
+    text-align: center;
+    height: 25px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #161b29;
+    border: 1px solid #30363d;
+}
+
