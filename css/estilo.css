@@ -9,7 +9,8 @@
 hr{
     border: 0;
     border-top: 1px solid #30363d;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 body {
@@ -336,7 +337,9 @@ body {
 
 .experience-container {
     border-left: 2px solid #30363d;
-    padding-left: 40px;
+    padding-left: 41px;
+    margin-left: 20px;
+
 }
 
 .experience-item {
@@ -364,8 +367,8 @@ body {
     background-color: #0c3712;
 }
 .experience-commit-title {
-    margin: 0 10px;
-    font-size: 22px;
+    padding-top: 5px;
+    font-size: 23px;
     color: whitesmoke;
 }
 .experience-commit-desc {
@@ -373,7 +376,7 @@ body {
 }
 .experience-commit-local-text {
     color:aqua;
-    font-size: 17px;
+    font-size: 18px;
 }
 .experience-commmit-squares-container {
     display: flex;         /* Coloca os itens em linha */
