@@ -18,12 +18,12 @@
         </div>
         
         <ul class="navbar-itens">
-            <li><a href="#home"><span class="icon">_'</span> Home</a></li>
-            <li><a href="#about"><span class="icon">_'</span> Sobre</a></li>
-            <li><a href="#stack"><span class="icon">_'</span> stack</a></li>
-            <li><a href="#experience"><span class="icon">_'</span> Experience</a></li>
-            <li><a href="#github"><span class="icon">_'</span> GitHub</a></li>
-            <li><a href="#contact"><span class="icon">_'</span> contact</a></li>
+            <li><a href="#home"><span class="icon"><img src="imagem/home-simbol.png" alt=""></span> Home</a></li>
+            <li><a href="#about"><span class="icon"><img src="imagem/about-simbol.png" alt=""></span> Sobre</a></li>
+            <li><a href="#stack"><span class="icon"><img src="imagem/tecnologias-simbol.png" alt=""></span> stack</a></li>
+            <li><a href="#experience"><span class="icon"><img src="imagem/experience-simbol.png" alt=""></span> Experience</a></li>
+            <li><a href="#github"><span class="icon"><img src="imagem/projects-simbol.png" alt=""></span> GitHub</a></li>  
+            <li><a href="#contact"><span class="icon"> <img src="imagem/email-logo.png" alt=""></span> contact</a></li>
         </ul>
 
         <div class="status">
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="home-image">
-                            <img src="/imagem/camisa branca.png" class="imagem-home" alt="Rafael Sales">
+                            <img src="imagem/camisa branca.png" class="imagem-home" name="foto-home" alt="Rafael Sales">
                         </div>
                     </div>
                 </div>
@@ -244,6 +244,12 @@
                     </div>
                     <span class="square-text-down">Python</span>
                 </div>
+                 <div class="square-container">
+                    <div class="stack-square-base" name="ssb-GIT">
+                        <span class="stack-square-text">GIT</span>
+                    </div>
+                    <span class="square-text-down">Git</span>
+                </div>
             </div>
         </section>
 
@@ -311,8 +317,70 @@
             </div>
 
         </section>
-       
+       <hr>
+        <section class="contact" id="contact">
 
+             <div class="high-sections-container">
+                <span class="hsc-barras">//</span> <span class="hsc-titulo">Contact</span> <span class="hsc-chaves">()</span>
+                <span class="hsc-desc">Vamos construir algo juntos!</span>
+            </div> 
+
+            <div class="contact-container">
+                <div class="contact-options-square">
+                    <span class="contact-square-green-text">$</span> <span>cat contact.json</span>
+                
+                    <div class="contact-option-square">
+                        <img src="imagem/github-logo.png" alt="" class="contact-option-image">
+                        <div class="contact-option-text-container">
+                             <a href="https://github.com/RafaellSaless" target="_blank" class="contact-option-tittle">GitHub</a>
+                            <span class="contact-option-desc">@rafaellsaless</span>
+                        </div>
+                    </div>
+                    <div class="contact-option-square">
+                        <img src="imagem/linkedin-logo.png" alt="" class="contact-option-image">
+                        <div class="contact-option-text-container">
+                            <a href="https://www.linkedin.com/in/rafaelsalesdev/" target="_blank" class="contact-option-tittle">LinkedIn</a>
+                            <span class="contact-option-desc">/in/rafaelsalesdev</span>
+                        </div>
+                    </div>
+                     <div class="contact-option-square">
+                        <img src="imagem/email-logo.png" alt="" class="contact-option-image">
+                        <div class="contact-option-text-container"><a href="https://google.com" target="_blank"></a>
+                            <span class="contact-option-tittle">Email</span>
+                            <span class="contact-option-desc">rafaelsales333.081@gmail.com</span>
+                        </div>
+                    </div>
+                        
+                        
+                    
+
+                </div>
+                <div class="contact-options-square-sendmessage">
+                    <span class="contact-square-green-text">$</span> <span>send-message --to me</span>  
+                    <div class="send-message-container">
+                    <form action="send-message" method="post"></form>
+                        <div class="send-mensagem">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" class="send-message-input-name">
+                        </div>
+                        <div class="send-mensagem">
+                            <label for="email" class="send-message-text">Email</label>
+                            <input type="email" name="email" class="send-message-input-email">
+                        </div>
+                        <div class="send-mensagem">
+                            <label for="desc" class="send-message-text">Mensagem:</label>
+                            <textarea class="send-message-input-desc" name="desc"></textarea>
+                        </div>
+
+                        <input type="submit" class="btn-submit-form" value="Enviar">
+                   
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
  
     </main>
 

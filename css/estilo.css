@@ -38,7 +38,15 @@ body {
     justify-content: space-between;
     gap: 50px;
     min-height: 80vh;
+
+
 }
+
+.home-container .home-image {
+    filter: grayscale(100%); /* Deixa a imagem em preto e branco */
+    transition: filter 1.0s ease; /* Suaviza a transição */
+}
+
 .home-text-container {
     flex: 1;
     max-width: 600px;
@@ -130,8 +138,8 @@ body {
 .github-btn:hover {
     background-color: rgba(2, 63, 10, 0.1);
     border-color: #22ff00;
-
     box-shadow: 0 0 15px rgba(4, 252, 25, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
+
 }
 
 .arrow-btn {
@@ -181,8 +189,14 @@ body {
     height: 350px;     
     object-fit: cover; /* Corta o excesso e centraliza o rosto */
     display: block;
-
     object-position: top; /*Faz o corte priorizar o topo da imagem*/
+}
+
+
+
+.home-container:hover .home-image{
+    filter: grayscale(0%); /* Volta a cor ao passar o mouse */
+    transition: filter 1.0s ease; /* Suaviza a transição */
 }
 
 .circle-color-green,
@@ -193,9 +207,13 @@ body {
     width: 8px;
     border-radius: 50%;
 }
+
+
 .circle-color-green { background-color: #3fb950; }
 .circle-color-red { background-color: #ff5f56; }
 .circle-color-yellow { background-color: #ffbd2e; }
+
+
 
 
 
@@ -414,11 +432,11 @@ body {
 /* --- 4. sql  --- */
 .square-container:has([name="ssb-sql"]):hover .stack-square-base {
     border-color: #d106db;
-    box-shadow: 0 0 15px #55055a, inset 0 0 5px rgba(230, 81, 0, 0.2);
+    box-shadow: 0 0 15px #f201ff, inset 0 0 5px rgba(230, 81, 0, 0.2);
 }
 .square-container:has([name="ssb-sql"]):hover .stack-square-text {
     color: #d106db;
-    text-shadow: 0 0 8px #55055a;
+    text-shadow: 0 0 8px #f201ff;
 }
 .square-container:has([name="ssb-sql"]):hover .square-text-down {
     color: #d106db;
@@ -434,6 +452,18 @@ body {
 }
 .square-container:has([name="ssb-python"]):hover .square-text-down {
     color: #fff200;
+}
+/* --- 6. Git  --- */
+.square-container:has([name="ssb-GIT"]):hover .stack-square-base {
+    border-color: #ffffff;
+    box-shadow: 0 0 15px #ffffff, inset 0 0 5px rgba(230, 81, 0, 0.2);
+}
+.square-container:has([name="ssb-GIT"]):hover .stack-square-text {
+    color: #ffffff;
+    text-shadow: 0 0 8px #ffffff;
+}
+.square-container:has([name="ssb-GIT"]):hover .square-text-down {
+    color: #ffffff;
 }
 
 /* ==========================================
@@ -504,3 +534,114 @@ body {
     border: 1px solid #30363d;
 }
 
+/* ==========================================
+   Contact SECTION
+   ========================================== */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+
+.contact-options-square {
+    padding: 20px 15px;
+    height: 265px;
+    width: 400px;
+    background-color: #161b29;
+    border: 2px solid #30363d;
+    border-radius: 10px;
+}
+
+.contact-square-green-text {
+    color: #1be336;
+}
+
+.contact-option-square {
+    margin-top: 15px;
+    height: 55px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+
+}
+.contact-options-square-sendmessage {
+    padding: 20px 15px;
+    height: auto;
+    width: 400px;
+    background-color: #161b29;
+    border: 2px solid #30363d;
+    border-radius: 10px;
+}
+.contact-option-square:hover {
+    background-color: #0d1117;
+}
+
+.contact-option-image {
+    height: 50px;
+    width: auto;
+}
+
+.contact-option-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-option-tittle {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+}
+.contact-option-desc {
+    color: #8b949e;
+    font-size: 13px;
+}
+
+.send-message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.send-mensagem label{
+  display: block;  
+  margin-bottom: 10px;
+}
+.send-message-input-email,
+.send-message-input-name {
+    padding: 0px 15px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #0d1117;
+    color: whitesmoke;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.23);
+    border-radius: 9px;
+}
+.send-message-input-desc {
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #0d1117;
+    color: whitesmoke;
+    height: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.23); 
+    border-radius: 9px;
+}
+.btn-submit-form {
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #3fb950;
+    color:#3fb950;    
+    background-color: rgba(63, 185, 80, 0.1);
+}
+.btn-submit-form:hover {
+    border-color: #22ff00;
+
+    box-shadow: 0 0 15px rgba(4, 252, 25, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
+
+}

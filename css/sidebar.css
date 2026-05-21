@@ -5,7 +5,7 @@
 }
 
 .sidebar {
-    width: 250px;
+    width: 200px;
     height: 100%;
     background-color: #0d1117;
     border-right: 1px solid #30363d;
@@ -29,6 +29,9 @@
 .navbar-itens li {
     margin: 15px 0;
 }
+.navbar-itens li a:hover {
+    color:#3fb950
+}
 
 .navbar-itens a {
     text-decoration: none;
@@ -39,15 +42,17 @@
     transition: 0.3s;
 }
 
-/* Efeito de hover e link ativo */
-.navbar-items a:hover, .navbar-items li.active a {
-    color: #3fb950;
+.icon {
+    height: 23px;
+    width: 23px;
 }
 
-.icon {
+
+.icon  img{
     margin-right: 10px;
     width: 20px;
     text-align: center;
+    
 }
 
 /* Status 'Available' no rodapé da sidebar */
