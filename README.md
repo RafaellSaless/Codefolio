@@ -30,4 +30,4 @@ IDE Windows: A janela de "avatar" e "sobre" possuem botões de controle (vermelh
 
 JSON Display: Meus dados são apresentados como se fossem um objeto real dentro de um editor de texto.
 
-Github pages: https://rafaellsaless.github.io/codefolio/
+Github pages: https://rafaellsaless.github.io/Codefolio/index.html
