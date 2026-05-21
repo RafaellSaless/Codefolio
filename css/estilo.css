@@ -49,6 +49,8 @@ body {
     justify-content: center;
 }
 
+
+
 /* =====================
     Comando de start
    ===================== */
@@ -125,6 +127,13 @@ body {
     font-family: monospace;
     text-decoration: none;
 }
+.github-btn:hover {
+    background-color: rgba(2, 63, 10, 0.1);
+    border-color: #22ff00;
+
+    box-shadow: 0 0 15px rgba(4, 252, 25, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
 .arrow-btn {
     font-weight: bolder;
     font-family: sans-serif;
@@ -137,6 +146,14 @@ body {
     background-color: #161b22;
     font-family: monospace;
     text-decoration: none;
+}
+
+.contact-btn:hover {
+    border-color: aqua;
+    color: aqua;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
+
 }
 
 /* =====================
@@ -260,6 +277,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-left: 20px;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .abs-text-green {
     font-size: 25px;
@@ -271,11 +290,18 @@ body {
     font-size: 12px
 }
 
+.abs:hover {
+    background-color: #1d2635;
+    border-color: aqua;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
 .about-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 40px;
+    gap: 10px;
     
 }
 .about-bonus {
@@ -319,18 +345,97 @@ body {
     justify-content: center;
     align-items: center;
 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
 }
+
+
+.stack-square-base:hover  {
+    background-color: #0d1117;
+}
+
 
 .square-text-down {
     font-size: 14px;
     color: #8b949e;
+
+    transition: color 0.3s ease;
 }
 
 .stack-square-text {
     font-size: 20px;
     color: #8b949e;
+
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+/* ==========================================
+   CORES PERSONALIZADAS NO HOVER (STACK)
+   ========================================== */
+
+/* --- 1. JAVA --- */
+.square-container:has([name="ssb-java"]):hover .stack-square-base {
+    border-color: #e65100;
+    box-shadow: 0 0 15px rgba(230, 81, 0, 0.5), inset 0 0 5px rgba(230, 81, 0, 0.2);
+}
+.square-container:has([name="ssb-java"]):hover .stack-square-text {
+    color: #e65100;
+    text-shadow: 0 0 8px rgba(230, 81, 0, 0.6);
+}
+.square-container:has([name="ssb-java"]):hover .square-text-down {
+    color: #e65100;
+}
+
+/* --- 2. HTML  --- */
+.square-container:has([name="ssb-html"]):hover .stack-square-base {
+    border-color: #0206ff;
+    box-shadow: 0 0 15px #02516b, inset 0 0 5px rgba(230, 81, 0, 0.2);
+}
+.square-container:has([name="ssb-html"]):hover .stack-square-text {
+    color: #0206ff;
+    text-shadow: 0 0 8px #02516b;
+}
+.square-container:has([name="ssb-html"]):hover .square-text-down {
+    color: #0206ff;
+}
+
+/* --- 3. CSS  --- */
+.square-container:has([name="ssb-css"]):hover .stack-square-base {
+    border-color: #15ac04bb;
+    box-shadow: 0 0 15px #0c6a02bb, inset 0 0 5px rgba(230, 81, 0, 0.2);
+}
+.square-container:has([name="ssb-css"]):hover .stack-square-text {
+    color: #15ac04bb;
+    text-shadow: 0 0 8px #0c6a02bb;
+}
+.square-container:has([name="ssb-css"]):hover .square-text-down {
+    color: #15ac04bb;
+}
+
+/* --- 4. sql  --- */
+.square-container:has([name="ssb-sql"]):hover .stack-square-base {
+    border-color: #d106db;
+    box-shadow: 0 0 15px #55055a, inset 0 0 5px rgba(230, 81, 0, 0.2);
+}
+.square-container:has([name="ssb-sql"]):hover .stack-square-text {
+    color: #d106db;
+    text-shadow: 0 0 8px #55055a;
+}
+.square-container:has([name="ssb-sql"]):hover .square-text-down {
+    color: #d106db;
+}
+/* --- 5. python  --- */
+.square-container:has([name="ssb-python"]):hover .stack-square-base {
+    border-color: #fff200;
+    box-shadow: 0 0 15px #a09a23, inset 0 0 5px rgba(230, 81, 0, 0.2);
+}
+.square-container:has([name="ssb-python"]):hover .stack-square-text {
+    color: #fff200;
+    text-shadow: 0 0 8px #a09a23;
+}
+.square-container:has([name="ssb-python"]):hover .square-text-down {
+    color: #fff200;
+}
+
 /* ==========================================
    Experience SECTION
    ========================================== */
@@ -339,7 +444,6 @@ body {
     border-left: 2px solid #30363d;
     padding-left: 41px;
     margin-left: 20px;
-
 }
 
 .experience-item {
@@ -357,6 +461,13 @@ body {
     border: 2px solid #1be336;
     border-radius: 50%;
     background-color: #075e12;
+
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.experience-item:hover .timeline-dot {
+    background-color: #00ff22;
+    box-shadow: 0 0 15px #00ff22, inset 0 0 5px rgba(0, 255, 255, 0.2);
 }
 
 .experience-commits-text-green {
