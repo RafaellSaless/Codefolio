@@ -1,3 +1,4 @@
+
 .logo {
     width: 40px;
     border-radius: 50%;
@@ -71,3 +72,9 @@
     font-weight:bolder;
 }
 
+@media (max-width: 768px) {
+    
+    .sidebar {
+        display: none;
+    }
+}
