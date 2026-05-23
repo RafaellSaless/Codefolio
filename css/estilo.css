@@ -39,16 +39,18 @@ body {
    ========================================== */
 
 .home-container {
-    margin-top: 0px;
+
+    margin-top: 150px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-    min-height: 80vh;
+    justify-content: space-around;
+    gap: 10px;
 }
+
 @media (max-width: 768px) { 
     .home-container {
         flex-direction: column;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }
 
@@ -73,6 +75,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 
@@ -153,7 +156,9 @@ body {
 @media (max-width: 768px) { 
     .home-descricao {
         display: block;
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -166,9 +171,9 @@ body {
     display: flex;
 }
 @media (max-width: 768px) { 
-    .home-text-container .home-buttons-container{
-        flex-direction: column;
-        width: 100%;
+    .home-buttons-container{
+        width: 97%;
+        margin: 40 auto 0 auto;
     }
 } 
 
@@ -181,6 +186,12 @@ body {
     font-family: monospace;
     text-decoration: none;
 }
+@media (max-width: 768px) {  
+    .github-btn {
+        width: 70%;
+    }
+}
+
 .github-btn:hover {
     background-color: rgba(2, 63, 10, 0.1);
     border-color: #22ff00;
@@ -202,6 +213,12 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {  
+    .contact-btn {
+        width: 70%;
+    }
+}
+
 .contact-btn:hover {
     border-color: aqua;
     color: aqua;
@@ -214,18 +231,20 @@ body {
     Foto home
    ===================== */
 .home-foto-container {
-    margin-top: 70px;   
+    margin-top: 35px;   
     border: 2px solid #30363d;
-    height: auto;
-    width: 400px;
+    height: fit-content;
+    width: 100%;
     border-radius: 10px;
     max-width: 450px; /* Evita que a foto fique gigante em telas grandes */
+    overflow: hidden;
+    display: block;
 
     
 }
 @media (max-width:796px ) {
     .home-foto-container {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -238,9 +257,15 @@ body {
 
 }
 
+.home-image {
+    height: fit-content;
+    display: block;
+}
+
 .home-image img {
     width: 100%;       /* Ocupa toda a largura da div */
-    height: 350px;     
+    height: auto;
+    max-height: 350px;     
     object-fit: cover; /* Corta o excesso e centraliza o rosto */
     display: block;
     object-position: top; /*Faz o corte priorizar o topo da imagem*/
@@ -308,7 +333,9 @@ body {
 
 @media (max-width: 768px) { 
     .square-code-container {
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
 }
 .square-code-titulo {
@@ -345,7 +372,8 @@ body {
    ======================= */
 .abs {
     height: 80px;
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     background-color: #161b29;
     border: 2px solid #30363d;
     border-radius: 10px;
@@ -359,6 +387,38 @@ body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
+@media (max-width: 796px ) { 
+    .abs {
+        width: 90%;
+    }
+}
+
+
+.about-bonus-text {
+    max-width: 650px;
+    width: 100%;
+    align-items: center; 
+}
+
+@media (max-width: 796px ) {
+    .about-bonus-text {
+        margin: 0 auto 20px auto;
+        align-items: center;
+    }
+
+    .abs-text {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 796px ) {
+    .abs-content {
+        width: 90%;
+    }
+}
+
+
 .abs-text-green {
     font-size: 25px;
     font-weight: bolder;
@@ -366,7 +426,8 @@ body {
     color: #1be336;
 }
 .abs-text-grey {
-    font-size: 12px
+    font-size: 12px;
+    overflow-wrap: break-word;
 }
 
 .abs:hover {
@@ -378,16 +439,16 @@ body {
 
 .about-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
-    
+    align-items: center;
+    justify-content: space-around;    
 
 }
 
 @media (max-width: 796px ) {
     .about-container {
         display: block;
+        align-items: center;
+        
     }
 }
 
@@ -395,15 +456,26 @@ body {
     flex: 1;
     max-width: 50%;
 }
+
+@media (max-width: 796px ) {
+    .about-bonus {
+        margin: 0 auto;    
+        max-width: 100%;
+    }
+}
+
+
 .about-bonus-squares {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 15px;
+    column-gap: 0px;   /* Diminui a distância na LARGURA (horizontal) */
+    row-gap: 15px;      /* Aumenta a distancia na ALTURA (vertical) */
 }
 
 @media (max-width: 796px ) {
     .about-bonus-squares {
-        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;   /* Diminui a distância na LARGURA (horizontal) */
+        row-gap: 15px;      /* Aumenta a distancia na ALTURA (vertical) */
     }
 }
 
@@ -623,13 +695,15 @@ body {
 .contact-container {
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    width: 90%;
 }
 
 
 @media (max-width: 796px ) {
     .contact-container {
+        margin: 0 auto 25px auto;
         flex-direction: column;
+        gap: 35px;
     }
  }
 
@@ -645,7 +719,8 @@ body {
 
 @media (max-width: 796px ) { 
     .contact-options-square {
-        width: 100%;
+        margin: 0 auto;
+        width: 85%;
     }
 }
 
@@ -673,7 +748,8 @@ body {
 }
 @media (max-width: 796px ) { 
     .contact-options-square-sendmessage {
-        width: 100%;
+        width: 85%;
+        margin: 0 auto 25px auto;
     }
 }
 
@@ -705,7 +781,7 @@ body {
 .send-message-container {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
 }
 .send-mensagem label{
   display: block;  
@@ -747,6 +823,20 @@ body {
 
 }
 
-/* ==========================================
-   RESPONSIVIDADE
-   ========================================== */
+.finally-texts {
+    display: flex;
+    justify-content: space-around;
+}
+.finally-text-black {
+    color: rgba(50, 47, 47, 0.948);
+}
+
+@media (max-width: 796px ) {
+    .finally-texts {
+        flex-direction: column;
+    }
+    .finally-text {
+        margin: 0 auto;
+        margin-bottom: px;
+    }
+}
