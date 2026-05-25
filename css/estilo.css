@@ -5,6 +5,9 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 hr{
     border: 0;
@@ -14,15 +17,23 @@ hr{
 }
 
 body {
-    background-color: #0d1117;
+    background-color: #0b0f19;
     color: #8b949e;
     display: flex;
+
+    background-image: radial-gradient(
+    circle at 20% 30%, /* Posição do brilho (X e Y) */
+    rgba(0, 200, 115, 0.15) 0%, /* Verde bem transparente no centro */
+    transparent 50% /* Dispersão até sumir */
+  );
+  background-repeat: no-repeat;
 }
 
 
 /* Espaço para o conteúdo não ficar embaixo da sidebar */
 .content {
-    margin-left: 250px;
+    margin-left: 90px;
+    margin-right: 0;
     padding: 40px;
     width: 100%;
 }
@@ -34,13 +45,60 @@ body {
     }
 
 }
+
+/* ==========================================
+   Disponivel dot
+   ========================================== */
+
+    .status-badge {
+        position: fixed;
+        bottom: 20px; 
+        right: 20px;  
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: rgba(18, 24, 36, 0.8); 
+        backdrop-filter: blur(8px); /* Efeito de vidro borrado */
+        padding: 8px 16px;
+        border: 1px solid #30363d;
+        border-radius: 20px;
+        color: #8b949e;
+        font-family: monospace;
+        font-size: 13px;
+        z-index: 9; 
+    }
+
+    /* O efeito do pontinho verde piscando */
+    .ping-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #3fb950;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .ping-dot::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #3fb950;
+        border-radius: 50%;
+        animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes ping {
+        0% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(2.5); opacity: 0; }
+    }
+
 /* ==========================================
    HOME SECTION
    ========================================== */
 
 .home-container {
 
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -185,6 +243,9 @@ body {
     background-color: rgba(63, 185, 80, 0.1);
     font-family: monospace;
     text-decoration: none;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
 }
 @media (max-width: 768px) {  
     .github-btn {
@@ -211,6 +272,9 @@ body {
     background-color: #161b22;
     font-family: monospace;
     text-decoration: none;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    
 }
 
 @media (max-width: 768px) {  
@@ -240,8 +304,18 @@ body {
     overflow: hidden;
     display: block;
 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+
     
 }
+.home-foto-container:hover {
+    background-color: #1d2635;
+    border-color: #30363d;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
 @media (max-width:796px ) {
     .home-foto-container {
         width: 85%;
@@ -272,10 +346,10 @@ body {
 }
 
 
-
 .home-container:hover .home-image{
     filter: grayscale(0%); /* Volta a cor ao passar o mouse */
     transition: filter 1.0s ease; /* Suaviza a transição */
+    
 }
 
 .circle-color-green,
@@ -329,6 +403,16 @@ body {
     width: 500px;
     border-radius: 10px;
     background-color: #161b29;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+
+.square-code-container:hover {
+    background-color: #1d2635;
+    border-color: #30363d;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
 }
 
 @media (max-width: 768px) { 
@@ -432,7 +516,7 @@ body {
 
 .abs:hover {
     background-color: #1d2635;
-    border-color: aqua;
+    border-color: #30363d;
 
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
 }
@@ -699,6 +783,7 @@ body {
 }
 
 
+
 @media (max-width: 796px ) {
     .contact-container {
         margin: 0 auto 25px auto;
@@ -715,6 +800,15 @@ body {
     background-color: #161b29;
     border: 2px solid #30363d;
     border-radius: 10px;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+.contact-options-square:hover {
+    background-color: #1d2635;
+    border-color: #30363d;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
 }
 
 @media (max-width: 796px ) { 
@@ -745,6 +839,15 @@ body {
     background-color: #161b29;
     border: 2px solid #30363d;
     border-radius: 10px;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+.contact-options-square-sendmessage:hover {
+    background-color: #1d2635;
+    border-color: #30363d;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
 }
 @media (max-width: 796px ) { 
     .contact-options-square-sendmessage {
@@ -826,6 +929,7 @@ body {
 .finally-texts {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 .finally-text-black {
     color: rgba(50, 47, 47, 0.948);
