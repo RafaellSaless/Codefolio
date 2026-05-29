@@ -280,6 +280,7 @@ body {
 @media (max-width: 768px) {  
     .contact-btn {
         width: 70%;
+
     }
 }
 
@@ -319,6 +320,7 @@ body {
 @media (max-width:796px ) {
     .home-foto-container {
         width: 85%;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
     }
 }
 
@@ -420,6 +422,7 @@ body {
         width: 85%;
         margin: 0 auto;
         margin-bottom: 40px;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
     }
 }
 .square-code-titulo {
@@ -815,6 +818,7 @@ body {
     .contact-options-square {
         margin: 0 auto;
         width: 85%;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
     }
 }
 
@@ -853,6 +857,7 @@ body {
     .contact-options-square-sendmessage {
         width: 85%;
         margin: 0 auto 25px auto;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
     }
 }
 
