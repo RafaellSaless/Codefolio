@@ -14,4 +14,4 @@ O design foi pensado para ser familiar a qualquer desenvolvedor:
 A janela de "avatar" e "sobre" possuem pontos simulando janelas de sistema operacional.
 Dados são apresentados como se fossem um objeto real dentro de um editor de texto.
 
-Github pages: vemsales.com
+Github pages: https://portfolio.vemsales.com/
