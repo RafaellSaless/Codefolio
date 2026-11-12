@@ -837,6 +837,11 @@ hr {
 
 .experience-item {
     position: relative;
+    margin-bottom: 40px;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
 }
 
 .timeline-dot {
